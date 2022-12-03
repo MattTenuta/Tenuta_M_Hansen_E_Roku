@@ -3,7 +3,7 @@
 
 Hi there, and welcome to Roku Kioku. Roku Kioku is a streaming service based off of the Roku brand. Roku Kioku allows our users to watch movies, tv shows, and more from your phone, tv, or computer directly from the internet, no downloads needed! Our goal is to provide our users with a easy to use, functioning way to watch their favourite media from the convenience of their own couch.
 
-So what are you waiting for, hop in and enjoy Roku Kioku
+So what are you waiting for? Hop in and enjoy Roku Kioku
 
 
 ## Plan
