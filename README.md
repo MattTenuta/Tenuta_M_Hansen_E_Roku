@@ -10,6 +10,12 @@ So what are you waiting for? Hop in and enjoy Roku Kioku
 
 ## Plan
 
+Dev Notes
+https://docs.google.com/document/d/1bTbDZgFouTz_285Ouc-8wm4xBHy-pT69/edit?usp=sharing&ouid=114925206480625209140&rtpof=true&sd=true
+
+Design Notes
+https://docs.google.com/document/d/1grr_1oJSdH_d3z_MBP6iRiQoMs4J84kW/edit?usp=sharing&ouid=114925206480625209140&rtpof=true&sd=true
+
 Our plan for the moment splits into 2 seperate parts, design and development. 
 
 For design, we plan to start with a account screen, and then load into your account along with many movies and tv shows you might like. Then, all you would have to do is select what you want to watch and relax.
@@ -19,8 +25,7 @@ For development, we plan to start mobile first and work up to desktop size so ou
 
 ## Team
 
-Roku Kioku was designed and built by Matthew Tenuta & Evan Hansen
-
+Roku Kioku was designed and built by Evan Hansen & Matthew Tenuta 
 
 ## Installation
 
