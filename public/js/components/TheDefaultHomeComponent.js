@@ -6,10 +6,10 @@ export default {
     template: `
     <main class="main">
 
-    <div class="three-items">
-        <h3>Movies</h3>
-        <h3>TV</h3>
-        <h3>Music</h3>
+    <div class="three-items2">
+        <button class="Genrebutton">Movies</button>
+        <button class="Genrebutton">TV</button>
+        <button class="Genrebutton">Music</button>
     </div>
 
     <section class="pad"> <!-- this section is for subgenre 1 --> 

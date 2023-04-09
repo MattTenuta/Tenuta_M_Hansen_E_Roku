@@ -45,7 +45,7 @@
           justify-content: space-evenly;
           row-gap: 1em;
         }
-  
+
         .three-items {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -62,6 +62,17 @@
             max-width: 100%;
             height: auto;
           }
+  
+          .three-items2 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+            justify-items: center;
+            align-items: center;
+            height: 10vh; /* Set the height of the grid container to the full viewport height */
+          }
+          
   
         .four-items {
           display: grid;
