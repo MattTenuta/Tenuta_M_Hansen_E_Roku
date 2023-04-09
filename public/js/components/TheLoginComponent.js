@@ -9,7 +9,7 @@ export default {
 
         <section class="log-in">
         <div class="pad">
-            <h3>Email</h3>
+            <h3>Username</h3>
             <label class="sr-only" for="inlineFormInputName">Name</label>
             <input ref="username" v-model="username" type="text" class="form-control" id="inlineFormInputName" placeholder="username" required>
         </div>

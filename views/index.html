@@ -28,7 +28,14 @@
         <router-view @setauthenticated="setAuth" @setactive="setCurrentUser" id="main-view" :user="currentUser"></router-view>
     </main>
 
-    <footer class="roku-footer"></footer>
+    <footer class="roku-footer">
+        <div class="three-items">
+          <a href="https://www.facebook.com/"><img src="/public/images/facebook.png" alt="Facebook Logo"></a>
+          <a href="https://www.instagram.com/"><img src="/public/images/insta.png" alt="Instagram Logo"></a>
+          <a href="https://twitter.com/?lang=en"><img src="/public/images/twitter.png" alt="Twitter Logo"></a>
+        </div>
+      </footer>
+      
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="https://unpkg.com/vue-router@4"></script>

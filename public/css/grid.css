@@ -47,13 +47,21 @@
         }
   
         .three-items {
-          display: grid;
-          grid-column: 2 / span 2;
-          grid-template-columns: repeat(3, 1fr);
-          justify-content: space-evenly;
-          row-gap: 2em;
-          column-gap: 2em;
-        }
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: end;
+            row-gap: 2em;
+            column-gap: 2em;
+            position: absolute;
+            top: 50%;
+            right: 2em;
+            transform: translateY(-50%);
+          }
+
+          .three-items img {
+            max-width: 100%;
+            height: auto;
+          }
   
         .four-items {
           display: grid;
