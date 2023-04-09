@@ -5,7 +5,7 @@ export default {
 
     template: `
     <section>
-        <h2 class="pad">Who's Watching?</h2>
+        <h2 class="pad font">Who's Watching?</h2>
     
         <user @setcurrentuser="this.$emit('setactive', user)" v-for="user in users" :user="user"></user>
     </section>

@@ -9,14 +9,14 @@ export default {
 
         <section class="log-in">
         <div class="pad">
-            <h3>Username</h3>
+            <h3 class="font">Username</h3>
             <label class="sr-only" for="inlineFormInputName">Name</label>
             <input ref="username" v-model="username" type="text" class="form-control" id="inlineFormInputName" placeholder="username" required>
         </div>
 
         <div class="pad">
             <label class="sr-only" for="inlineFormPassword">Name</label>
-            <h3>Password</h3>
+            <h3 class="font">Password</h3>
             <input ref="password" v-model="password" type="password" class="form-control" id="inlineFormPassword" placeholder="password" required>
         </div>
         </section>

@@ -23,6 +23,10 @@
     padding: 0.75em 1.5em;
  }
 
+ .font {
+    font-family: 'Kanit', sans-serif;
+ }
+
  .card {
     cursor: pointer;
     color: white;
@@ -43,4 +47,22 @@
  .username {
     font-size: 25px;
     padding: 5px;
+    font-family: 'Kanit', sans-serif;
  }
+
+ .Genrebutton {
+    background-color: #3F612D;
+    width: 20%;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Kanit', sans-serif;
+    cursor: pointer;
+  }
+  
+  .Genrebutton:hover {
+    background-color: #2F4820;
+  }
+  
