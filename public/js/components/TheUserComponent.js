@@ -4,10 +4,10 @@ export default {
 
     template: `
 
-    <div @click="NavToHome" class="card rounded avatar">
+    <div @click="NavToHome" class="card avatar">
     <div class="card-body text-center">
         <img :src='"images/" + user.avatar' class="rounded-circle img-fluid" alt="user avatar">
-        <p>{{user.username}}</p>
+        <p class="username">{{user.username}}</p>
     </div>
 </div>
     `,

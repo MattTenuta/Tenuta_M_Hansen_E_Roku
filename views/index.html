@@ -15,7 +15,7 @@
 <body>
     <main id="app">
         <header class="roku-header">
-            <img src="images/roku.svg" alt="Roku logo" width="90">
+            <a href="http://localhost:3000/#/users"><img src="images/roku.svg" alt="Roku logo" width="90"></a>
             <nav class="float-right">
                 <ul v-if="authenticated">
                     <li @click="changeUser"><i class="fas fa-user-circle"></i></li>
@@ -27,6 +27,15 @@
 
         <router-view @setauthenticated="setAuth" @setactive="setCurrentUser" id="main-view" :user="currentUser"></router-view>
     </main>
+
+    <footer class="roku-footer">
+        <div class="three-items">
+          <a href="https://www.facebook.com/"><img src="/public/images/facebook.png" alt="Facebook Logo"></a>
+          <a href="https://www.instagram.com/"><img src="/public/images/insta.png" alt="Instagram Logo"></a>
+          <a href="https://twitter.com/?lang=en"><img src="/public/images/twitter.png" alt="Twitter Logo"></a>
+        </div>
+      </footer>
+      
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="https://unpkg.com/vue-router@4"></script>

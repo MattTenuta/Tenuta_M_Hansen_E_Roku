@@ -4,18 +4,21 @@ export default {
     template: `
     <section class="container">
         <div class="jumbotron">
-            <h1>Welcome to Flashblack!</h1>
-            <p class="lead">
-            Before revisiting your favourite movies, tv shows or music from yesteryear, please log in with a valid username and password.
-            </p>
+        <img src="images/roku.svg" alt="Roku logo" width="300" class="botPad">
         </div>
 
         <section class="log-in">
-        <label class="sr-only" for="inlineFormInputName">Name</label>
-        <input ref="username" v-model="username" type="text" class="form-control" id="inlineFormInputName" placeholder="username" required>
+        <div class="pad">
+            <h3>Username</h3>
+            <label class="sr-only" for="inlineFormInputName">Name</label>
+            <input ref="username" v-model="username" type="text" class="form-control" id="inlineFormInputName" placeholder="username" required>
+        </div>
 
-        <label class="sr-only" for="inlineFormPassword">Name</label>
-        <input ref="password" v-model="password" type="password" class="form-control" id="inlineFormPassword" placeholder="password" required>
+        <div class="pad">
+            <label class="sr-only" for="inlineFormPassword">Name</label>
+            <h3>Password</h3>
+            <input ref="password" v-model="password" type="password" class="form-control" id="inlineFormPassword" placeholder="password" required>
+        </div>
         </section>
 
         <button
