@@ -28,6 +28,10 @@ const router = VueRouter.createRouter({
     { path: '/kidshome', // the location bar URL
         name: `kidshome`, //the name of the route (for programmatic navigation)
         component: KidsHome //the component to render
+    },
+    { path: '/media',
+        name: `mediaContent`,
+        component: MediaTemplate
     }
 
         ] // short for `routes: routes`
@@ -53,7 +57,6 @@ const router = VueRouter.createRouter({
     },
 
     methods: {
-
 
         setAuth() {
             this.authenticated = true;
