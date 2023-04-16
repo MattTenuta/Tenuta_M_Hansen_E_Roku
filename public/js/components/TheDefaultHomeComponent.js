@@ -1,7 +1,7 @@
 export default {
     name: 'TheDefaultHomeComponent',
 
-    props: ['user'],
+    props: ['item'],
 
     template: `
     <main class="main">
@@ -14,7 +14,7 @@ export default {
 
     <section class="pad"> <!-- this section is for subgenre 1 --> 
     <h2 class="hidden"> This Section is for subgenre </h2>
-    <div @click="NavToMedia(item)" v-for="item in movieData" :key="item.id" :item="item" class="card avatar">
+    <div v-for="item in movieData" :key="item.id" :item="item" class="card avatar" @click="NavToMedia(item)">
         <div class="card-body text-center">
             <h1> {{item.title}} </h1>
             <img class="movieImage" :src="item.image" alt="Movie Image">
@@ -106,9 +106,9 @@ export default {
 
     methods: {
         NavToMedia(movie) {
-
             // Now, the challenging thing is to get the info of which item was clicked over to the media component
 
+            // I seriously don't know why this isn't working. The other one in TheUserComponent does and it has all the same parts. Ughhhhhh
             this.$emit('movieSelected', movie);
 
             debugger;
