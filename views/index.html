@@ -33,6 +33,15 @@
         </header>
 
         <router-view @setauthenticated="setAuth" @setactive="setCurrentUser" id="main-view" :user="currentUser"></router-view>
+
+        <div v-for="item in movieData" :key="item.id" :item="item" class="card avatar" @click="NavToMedia(item)" @setactive="movieSelected(item)">
+            <div class="card-body text-center">
+                <h1> {{item.title}} </h1>
+                <img class="movieImage" :src="item.image" alt="Movie Image">
+                <p>{{item.description}}</p>
+            </div>
+        </div>
+        
     </main>
 
     <footer class="roku-footer">

@@ -89,8 +89,8 @@ const router = VueRouter.createRouter({
         },
 
         movieSelected(movie){
+            console.log("fired from movieSelected");
             this.selectedMovie = movie;
-            debugger;
         },
 
         created(){
