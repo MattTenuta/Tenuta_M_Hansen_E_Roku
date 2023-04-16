@@ -14,7 +14,7 @@ export default {
 
     <section class="pad"> <!-- this section is for subgenre 1 --> 
     <h2 class="hidden"> This Section is for subgenre </h2>
-    <div @click="NavToMedia" v-for="item in movieData" :key="item.id" :item="item" class="card avatar">
+    <div @click="NavToMedia(item)" v-for="item in movieData" :key="item.id" :item="item" class="card avatar">
         <div class="card-body text-center">
             <h1> {{item.title}} </h1>
             <img class="movieImage" :src="item.image" alt="Movie Image">
@@ -104,14 +104,18 @@ export default {
         //     });
     },
 
-    methods : {
-        NavToMedia() {
-            // Sure hope this is right
+    methods: {
+        NavToMedia(movie) {
+
+            // Now, the challenging thing is to get the info of which item was clicked over to the media component
+
+            this.$emit('movieSelected', movie);
+
+            debugger;
+            
             let targetRoute = 'mediaContent';
 
             this.$router.push({name: targetRoute});
-
-            // Now, the challenging thing is to get the info of which item was clicked over to the media component
 
         }
     }

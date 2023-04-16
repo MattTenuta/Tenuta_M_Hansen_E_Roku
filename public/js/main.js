@@ -6,7 +6,6 @@ import KidsHome from "./components/TheKidsHomeComponent.js";
 import MediaTemplate from "./components/TheMediaComponent.js";
 // import ErrorPage from "./modules/ErrorPage.js";
 
-
 const router = VueRouter.createRouter({
     // 4. Provide the history implementation to use. We are using the hash history for simplicity here.
     history: VueRouter.createWebHashHistory(),
@@ -39,6 +38,8 @@ const router = VueRouter.createRouter({
   
   // 5. Create and mount the root instance.
   const app = Vue.createApp({
+
+    
     mounted() {
         //check to see if the user has already logged in
         //if they have, push them to the all users route
@@ -53,6 +54,7 @@ const router = VueRouter.createRouter({
             authenticated: false,
             //save the current user so that we can access this data later
             currentUser: {},
+            selectedMovie: {}
         }
     },
 
@@ -83,19 +85,31 @@ const router = VueRouter.createRouter({
             //recieve the user data from the users panel in the alluserscomponent
             //save it here so that we can re-inject it into the users home page
             this.currentUser = user;
+            debugger;
         },
+
+        movieSelected(movie){
+            this.selectedMovie = movie;
+            debugger;
+        },
+
         created(){
             if(window.localStorage.getItem('user')) {
                 this.$router.push({name: 'allusers'});
             }
         }
+        
     },
 
     components: {
         mediaTemplate: MediaTemplate
     }
+
   })
+
   // Make sure to _use_ the router instance to make the
   // whole app router-aware.
   app.use(router);
   app.mount('#app');
+
+  
