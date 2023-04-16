@@ -12,14 +12,17 @@ export default {
         <button class="Genrebutton">Music</button>
     </div>
 
-    <div v-for="item in movieData" :key="item.id" :item="item" class="">
-        <h1> {{item.title}} </h1>
-        <img :src="item.image" alt="Movie Image">
-        <p>{{item.description}}</p>
-    </div>
+    
 
     <section class="pad"> <!-- this section is for subgenre 1 --> 
-    <h2> This Section is for subgenre </h2>
+    <h2 class="hidden"> This Section is for subgenre </h2>
+    <div v-for="item in movieData" :key="item.id" :item="item" class="card avatar">
+        <div class="card-body text-center">
+            <h1> {{item.title}} </h1>
+            <img class="movieImage" :src="item.image" alt="Movie Image">
+            <p>{{item.description}}</p>
+        </div>
+    </div>
     </section>
 
     <section class="pad"> <!-- this section is for subgenre 2 --> 
