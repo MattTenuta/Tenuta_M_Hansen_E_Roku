@@ -3,6 +3,7 @@ import LoginPage from "./components/TheLoginComponent.js";
 import AllUsersPage from "./components/TheAllUsersComponent.js";
 import DefaultHome from "./components/TheDefaultHomeComponent.js";
 import KidsHome from "./components/TheKidsHomeComponent.js";
+import MediaTemplate from "./components/TheMediaComponent.js";
 // import ErrorPage from "./modules/ErrorPage.js";
 
 
@@ -47,11 +48,13 @@ const router = VueRouter.createRouter({
         return {
             authenticated: false,
             //save the current user so that we can access this data later
-            currentUser: {}
+            currentUser: {},
         }
     },
 
     methods: {
+
+
         setAuth() {
             this.authenticated = true;
         },
@@ -83,6 +86,10 @@ const router = VueRouter.createRouter({
                 this.$router.push({name: 'allusers'});
             }
         }
+    },
+
+    components: {
+        mediaTemplate: MediaTemplate
     }
   })
   // Make sure to _use_ the router instance to make the
