@@ -43,11 +43,7 @@ export default {
             'js/API/60sTop1000.json',
             'js/API/70sTop1000.json',
             'js/API/80sTop1000.json',
-            'js/API/90sTop1000.json',
-            'js/API/60sTop1000Kids.json',
-            'js/API/70sTop1000Kids.json',
-            'js/API/80sTop1000Kids.json',
-            'js/API/90sTop1000Kids.json',
+            'js/API/90sTop1000.json'
         ];
 
         
